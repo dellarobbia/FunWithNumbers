@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Class to create object based on user's input
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
