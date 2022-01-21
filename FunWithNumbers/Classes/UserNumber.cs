@@ -22,25 +22,13 @@ namespace FunWithNumbers.Classes
         }
 
         //Getters & Setters
-        public double GetNumber()
-        {
-            return _number;
-        }
+        public double GetNumber() => _number;
 
-        public void SetNumber(double number)
-        {
-            _number = number;
-        }
+        public void SetNumber(double number) => _number = number;
 
-        public long GetLongNumber()
-        {
-            return _longNumber;
-        }
+        public long GetLongNumber() => _longNumber;
 
         //Special setter for _longNumber to convert the user's double input into a long
-        public void SetLongNumber()
-        {
-            _longNumber = (long)_number;
-        }
+        public void SetLongNumber() => _longNumber = (long)_number;
     }
 }

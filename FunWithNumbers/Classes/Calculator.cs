@@ -25,20 +25,11 @@ namespace FunWithNumbers.Classes
         }
 
         //Getters and Setters
-        public List<UserNumber> GetUserNumbers()
-        {
-            return _userNumbers;
-        }
+        public List<UserNumber> GetUserNumbers() => _userNumbers;
 
-        public void SetUserNumbers(List<UserNumber> userNumbers)
-        {
-            _userNumbers = userNumbers;
-        }
+        public void SetUserNumbers(List<UserNumber> userNumbers) => _userNumbers = userNumbers;
 
-        public long GetSum()
-        {
-            return _sum;
-        }
+        public long GetSum() => _sum;
 
         //Special setter that calculates _sum based on given _userNumbers
         private void SetSum()
@@ -49,15 +40,9 @@ namespace FunWithNumbers.Classes
             }
         }
 
-        public double GetAverage()
-        {
-            return _average;
-        }
+        public double GetAverage() => _average;
 
         //Special setter that calculates _average based on given _userNumbers
-        private void SetAverage()
-        {
-            _average = _sum / _userNumbers.Count;
-        }
+        private void SetAverage() => _average = _sum / _userNumbers.Count;
     }
 }
