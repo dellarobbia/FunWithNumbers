@@ -13,7 +13,7 @@ namespace FunWithNumbers.Classes
     {
         //Member Variables
         private List<UserNumber> _userNumbers;
-        private long _sum;
+        private double _sum;
         private double _average;
 
         //Constructor
@@ -29,14 +29,14 @@ namespace FunWithNumbers.Classes
 
         public void SetUserNumbers(List<UserNumber> userNumbers) => _userNumbers = userNumbers;
 
-        public long GetSum() => _sum;
+        public double GetSum() => _sum;
 
         //Special setter that calculates _sum based on given _userNumbers
         private void SetSum()
         {
             for(int i = 0; i <= _userNumbers.Count - 1; i++)
             {
-                _sum += _userNumbers[i].GetLongNumber();
+                _sum += _userNumbers[i].GetNumber();
             }
         }
 

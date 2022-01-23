@@ -19,6 +19,7 @@ namespace FunWithNumbers.Classes
         public UserNumber(double number)
         {
             SetNumber(number);
+            SetLongNumber();
         }
 
         //Getters & Setters

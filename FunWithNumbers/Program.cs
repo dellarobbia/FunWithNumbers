@@ -22,10 +22,13 @@ namespace FunWithNumbers
         {
             List<UserNumber> _userNumbers = GetUserInputs();
             Calculator _userNumberCalculator = new Calculator(_userNumbers);
-            Console.WriteLine("The sum is " + _userNumberCalculator.GetSum());
-            Console.WriteLine("The average is " + _userNumberCalculator.GetAverage());
+
+            //Format the output to a max of two decimal places
+            Console.WriteLine("The sum is " + String.Format("{0:0.##}", _userNumberCalculator.GetSum()));
+            Console.WriteLine("The average is " + String.Format("{0:0.##}",_userNumberCalculator.GetAverage()));
         }
 
+        //Loop a prompt 5 times to get numbers from the user
         static List<UserNumber> GetUserInputs()
         {
             List<UserNumber> _holdUserNumbers = new List<UserNumber>();
