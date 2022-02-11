@@ -89,7 +89,7 @@ namespace FunWithNumbers.Classes
             {
                 _compMin = _userNumbers[i].GetNumber();
 
-                if (_min < _compMin)
+                if (_min > _compMin)
                 {
                     _min = _compMin;
                 }
