@@ -24,12 +24,14 @@ namespace FunWithNumbers
             Calculator _userNumberCalculator = new Calculator(_userNumbers);
             Console.WriteLine("The sum is " + _userNumberCalculator.GetSum());
             Console.WriteLine("The average is " + _userNumberCalculator.GetAverage());
+            Console.WriteLine("The highest value is " + _userNumberCalculator.GetMax());
+            Console.WriteLine("The lowest value is " + _userNumberCalculator.GetMin());
         }
 
         static List<UserNumber> GetUserInputs()
         {
             List<UserNumber> _holdUserNumbers = new List<UserNumber>();
-            for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine("Please enter number {0}:", i);
                 _holdUserNumbers.Add(new UserNumber(Double.Parse(Console.ReadLine())));
